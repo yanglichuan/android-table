@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ylc="http://schemas.android.com/apk/res/com.example.bittt4"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/mylist1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:background="@android:color/darker_gray" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/mylist2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/mylist3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark" >
+        </ListView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mask_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:background="#330000ff" />
+
+</RelativeLayout>
